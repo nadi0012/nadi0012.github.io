@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+}
+
+header, h2, footer {
+    background-color: rgb(100, 100, 100);
+}
+.site-title {color: rgb(210, 191, 62);}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+dd ul {list-style: square;}
+
+dd ul li:nth-child(odd) {
+    background-color: rgb(210, 191, 62);
+}
+
+nav ul li {list-style: none;}
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: rgb(84, 85, 84);
+    border: 0.025px solid rgb(17, 17, 17);
+    text-decoration: none;
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus{
+    text-decoration: none;
+    color: rgb(210, 191, 62);
+}
+nav ul a:active {
+box-shadow: 0 0 4px black;
+}
