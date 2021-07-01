@@ -1,39 +1,44 @@
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #455251;
 }
 
-
-.container{
+/* Selecting elements with class name */
+.container {
     background-color: #9ab8b5;
     margin: 0 auto;
     max-width: 1200px;
 }
-img{
+
+img {
     width: 100%;
     float: left;
     margin-left: 1em;
 }
-img[src$=".jpg"]{
+
+img[src$=".jpg"] {
     border: 2px solid #9ab8b5;
     height: 25em;
     width: 25em;
     margin-right: 1%;
     box-sizing: border-box;
 }
-p{
+
+p {
     text-align: justify;
     margin-right: 1em;
     font-size: 1.1em;
     margin-top: 3%;
 }
-h2{
+
+h2 {
     font-size: 35px;
     font-weight: bold;
     margin-left: 1.5%;
     color: #3c4645;
 }
-h3{
+
+h3 {
     font-size: 25px;
     font-weight: bold;
     margin-left: 1.5%;
@@ -41,9 +46,9 @@ h3{
 }
 
 
-.site-title{
+.site-title {
     position: relative;
-
+    /* adding background image */
     background: tan url(../images/lone-starfish-wide.jpg) no-repeat center center;
     background-size: cover;
     margin-top: -1em;
@@ -54,23 +59,25 @@ h3{
     z-index: 2;
 }
 
-nav ul{
+/* Selecting child elements */
+nav ul {
     list-style: none;
     background-color: #455251;
     padding: 2em;
     display: block;
-    margin-top: -2em; 
-    
+    margin-top: -2em;
+
 }
+
 nav ul li {
     display: inline;
     width: 60%;
     padding-left: 10em;
     box-sizing: border-box;
-    
-
 }
-.navi{
+
+.navi {
+    /* using single side border for the first 2 navigations */
     border-right: 1em solid #9ab8b5;
     padding-top: 4em;
     padding-bottom: 3em;
@@ -78,9 +85,10 @@ nav ul li {
     text-decoration: none;
     color: #9ab8b5;
     font-weight: bold;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
-.navi2{
+
+.navi2 {
     border-right: 1em solid #9ab8b5;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -88,24 +96,26 @@ nav ul li {
     text-decoration: none;
     color: #9ab8b5;
     font-weight: bold;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
-.navi3{
+
+.navi3 {
     padding-top: 3em;
     padding-bottom: 3em;
     text-decoration: none;
     color: #9ab8b5;
     font-weight: bold;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
-
-section ul{
+section ul {
     list-style: square;
     margin-right: 1em;
     font-size: 1.1em;
 }
-#contact{
+
+/* Selecting element with id selector */
+#contact {
     border: .2em solid #3c4645;
     font-weight: bold;
     margin-left: 1em;
@@ -114,34 +124,44 @@ section ul{
     padding: 1em;
 }
 
-#fullname, #youremail, #message{
-	width: 98%;
-	box-sizing: border-box;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	margin-left: 1%;
+/* selecting multiple id */
+#fullname,
+#youremail,
+#message {
+    width: 98%;
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
 }
-#formheader{
-    font-size: 19px;
-    font-weight:bold;
-}
-#yes, #no, #maybe {
 
-	margin-bottom: 1%;
-	margin-left: 1%;
+#formheader {
+    font-size: 19px;
+    font-weight: bold;
 }
-.button{
-    border:.1em solid #9ab8b5;
+
+#yes,
+#no,
+#maybe {
+
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+.button {
     margin: 2%;
-	background-color: #455251;
-	width: 10%;
+    background-color: #748a88;
+    width: 10%;
 }
-.button:active{
-	background-color: #455251;
-	border-color: #455251;
+
+.button:active {
+    background-color: #455251;
+    border-color: #455251;
 }
-.site-footer{
-	text-align: right;
+
+.site-footer {
+    text-align: right;
     padding-bottom: 1%;
-	margin-right: 2%;
+    margin-top: 1%;
+    margin-right: 2%;
 }
