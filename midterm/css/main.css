@@ -51,36 +51,38 @@ table {
 
 /* now i start my css */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #455251;
     margin-top: 0px;
 }
 
 /* Selecting elements with class name */
 .container {
+    position: relative;
     background-color: #9ab8b5;
     margin: 0 auto;
-    max-width: 1500px;
+    width: 70%;
+    max-width: 1200px;
 }
 
 .titlebox {
     border: #9ab8b5;
     position: relative;
     width: 100%;
-    height: 20em;  
+    height: 20em;
 }
 
 h1{
-    font-weight: bold;
+    font-weight: 900;
     width: 50%;
     position: absolute;
-    padding-left: 6em;
+    padding-left: 4em;
     top: 58%; 
     bottom: 30%; 
     color: #455251;
     text-align: center;
     z-index: 2;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 img[src$="lone-starfish-wide.jpg"] {
@@ -99,16 +101,8 @@ img {
 nav ul{
     list-style: none;
     background-color: #455251;
-    height: 10em;
-    display: block;
-    margin-top: -2em
-}
-
-nav ul li {
-    display: inline;
-    width: 50%;
-    padding-left: 14em;
-    box-sizing: border-box;
+    height: 6em;
+    display: block;   
 }
 
 /* i use seperated class for each navigation(home, story and contact) */
@@ -118,33 +112,35 @@ nav ul li {
 	float: left;
 	width: 33%;
 	height: 5em;
-	padding-top: 3.2rem;
+	padding-top: 1.3em;
 	text-align: center;
 	font-weight: bold;
     font-size: 1.6rem;
 	color: #9ab8b5;
 	text-decoration: none;
 	box-sizing: border-box;
+
 }
 
 .navi1{
     border-right: 1em solid #9ab8b5;
 	float: left;
-	width: 34%;
+	width: 35%;
     height: 5em;
-	padding-top: 2em;
+	padding-top: 1.3em;
 	text-align: center;
 	font-weight: bold;
     font-size: 1.6rem;
 	color: #9ab8b5;
 	text-decoration: none;
 	box-sizing: border-box;
+
 }
 .navi2{
     float: left;
 	width: 30%;
     height: 5em;
-	padding-top: 1.2em;
+	padding-top: 1.3em;
 	text-align: center;
 	font-weight: bold;
     font-size: 1.6rem;
@@ -164,7 +160,7 @@ img[src$="lone-starfish.jpg"] {
 p {
     text-align: justify;
     margin-right: 1em;
-    font-size: 1.2em;
+    font-size: 1.09em;
     margin-top: 2.2%;
     margin-left: 1em;
     color: #3c4645;
