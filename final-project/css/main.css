@@ -458,14 +458,12 @@ i.im-magnifier {
 
 .tables h3 {
     padding-left: 1%;
-    padding-top: -20px;
     margin-bottom: 5px;
     font-size: 30px;
 }
 
 .map h3 {
     padding-left: 1%;
-    padding-top: -20px;
     margin-bottom: 5px;
     font-size: 30px;
 }
@@ -768,3 +766,4 @@ table td {
     .map h3 {
         padding-bottom: 15px;
     }
+}
