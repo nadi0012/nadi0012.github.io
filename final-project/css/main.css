@@ -5,61 +5,151 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /* -------------------------------------------------------------------------
                 Custom Styles
 -----------------------------------------------------------------------*/
 /* now i start my css */
 /* colors: #c78c06, #ffe6ac, #222  */
-html{
+html {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     line-height: 1.5;
 }
+
 /*  * used for every single elements in web */
 *,
 *:after,
@@ -67,29 +157,33 @@ body{
     box-sizing: inherit;
     line-height: inherit;
 }
-.clearfix:after{
+
+.clearfix:after {
     content: '';
-    display:table;
+    display: table;
     clear: both;
 }
-img{
+
+img {
     width: 100%;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-    font-weight:bold;
+    font-weight: bold;
     /* top left-right bottom */
     margin: 1em 0 0.5em;
 }
+
 h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h3 {
@@ -99,36 +193,578 @@ h3 {
 h4 {
     font-size: 1.5rem;
 }
-p{
+
+p {
     /* top-bottom left-right */
     margin: 1em 0;
+    font-size: 1rem;
+
 }
-.container{
+
+.nav-list {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1em;
-    
 }
-.main-nav{
+
+.main-nav {
     background-color: #222;
+    padding-bottom: 15px;
 }
+
+nav li:first-child {
+    text-align: left;
+    padding: 1.5% 1.5% 0 1.5%;
+}
+
 .logo {
-    max-width: 130px;
-    margin: 1% 1% 0 1%;
+    max-width: 140px;
+
 }
+
 .nav-list li {
     text-align: center;
     width: 100%;
-    margin: 1% 1% 1% 1%;
+    padding: 0% 1.5% 0 1.5%;
 }
 
-.nav-list li a {
+.nav-list li a,
+.nav-list li a:link,
+.nav-list li a:visited {
+    display: block;
     color: #c78c06;
     text-decoration: none;
+    padding: 5px;
     width: 100%;
 }
-.nav-list .home{
+
+.nav-list li a:hover,
+.nav-list li a:focus,
+.nav-list li a.home {
     background-color: #c78c06;
-    back
     color: #222;
 }
+
+.searchinfo input {
+    display: inline-block;
+    padding-top: 0;
+    vertical-align: middle;
+    height: 35px;
+    margin-right: -5px;
+    width: 93%;
+
+}
+
+.button {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #c78c06;
+    vertical-align: middle;
+    width: 7%;
+    height: 35px;
+}
+
+i.im-magnifier {
+    vertical-align: middle;
+    color: #c78c06;
+    text-align: center;
+
+}
+
+/* -------------------------------------------------- */
+.banner {
+    background: #222 url("../images/main-banner.jpg") no-repeat center bottom;
+    background-size: cover;
+    padding-top: 12%;
+    padding-bottom: 10%;
+}
+
+.bannerinfo {
+    background-color: rgba(34, 34, 34, 0.7);
+    color: white;
+    padding: 2% 5% 2% 10%;
+}
+
+.button1 {
+    background-color: #c78c06;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    color: #222;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.bannerinfo i {
+    font-size: 20px;
+    vertical-align: middle;
+    padding-left: 3px;
+}
+
+/* End of the header */
+#about {
+    background-color: #ffe6ac;
+}
+
+.about-us {
+    padding: 1.5% 1.5% 0 1.5%;
+
+}
+
+.aboutinfo {
+    padding: 0 1.5% 1.5% 2%;
+    margin-top: 0.1px;
+}
+
+/* -------Our Service */
+
+#service {
+    background-color: white;
+}
+
+#service h2 {
+    padding-left: 1.5%;
+}
+
+#service h3 {
+    padding: 1.5% 1.5% 0px 1.5%;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+
+.digital,
+.marketing,
+.video,
+.web,
+.print {
+    padding: 1.5% 1.5% 0 1.5%;
+    width: 100%;
+}
+
+.dtinfo,
+.marketinginfo,
+.vpinfo,
+.wdinfo,
+.printinfo {
+    background-color: #ffe6ac;
+    padding: 2% 1.5% 1.5% 2%;
+    margin-top: -40px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.buttons {
+    background-color: #222;
+    color: white;
+    padding: 30px 50px 30px 50px;
+    text-align: center;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.dtinfo i,
+.marketinginfo i,
+.vpinfo i,
+.wdinfo i,
+.printinfo i {
+    font-size: 20px;
+    vertical-align: middle;
+    padding-left: 3px;
+}
+
+/* -----------------------Our Vision------------------- */
+.vision {
+    background: grey url("../images/vision.jpg") no-repeat center;
+    position: relative;
+    background-size: cover;
+    color: white;
+    padding: 0.2% 1.5% 1.5% 2%;
+    margin-top: 4%;
+}
+
+.vision .buttons {
+    border: solid #c78c06;
+}
+
+.vision i {
+    font-size: 20px;
+    vertical-align: middle;
+    padding-left: 3px;
+}
+
+/* -----------------------Our team------------------- */
+#team h2 {
+    padding-left: 1.5%;
+    margin-bottom: 0;
+}
+
+#team h4 {
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+#team {
+    padding: 1.5% 1.5% 1.5% 1.5%;
+}
+
+.john {
+    width: 100%;
+    height: 100%;
+    padding: 1.5% 1.5% 0 1.5%;
+}
+
+.team2 {
+    background-color: #ffe6ac;
+    padding: 2% 1.5% 1.5% 2%;
+    margin-top: -40px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.team2 hr {
+    border: solid #c78c06;
+}
+
+.bob {
+    width: 100%;
+    height: 100%;
+    padding: 1.5% 1.5% 0 1.5%;
+}
+
+.team4 {
+    background-color: #ffe6ac;
+    padding: 2% 1.5% 1.5% 2%;
+    margin-top: -40px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.team4 hr {
+    border: solid #c78c06;
+}
+
+/* -----------------------contact------------------- */
+#contact h2 {
+    padding-left: 1%;
+    padding-bottom: 0;
+}
+
+.form h3 {
+    margin-top: -40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.tables h3 {
+    padding-left: 1%;
+    padding-top: -20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.map h3 {
+    padding-left: 1%;
+    padding-top: -20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.form,
+#contact input,
+#contact textarea {
+    box-sizing: border-box;
+    padding: 1.5% 1.5% 0 1.5%;
+    width: 100%;
+}
+
+#fullname,
+#youremail,
+#message {
+    width: 98%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border: solid #222;
+}
+
+.form label {
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.button2 {
+    border: none;
+    background-color: #222;
+    color: #c78c06;
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.tables h3 {
+    padding-bottom: 0;
+}
+
+.table {
+    padding: 0 1.5% 0 1.5%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #222;
+    height: 20%;
+    margin-top: 10px;
+}
+
+table th {
+    background-color: #ffe6ac;
+    justify-self: center;
+    font-weight: 600;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+table td {
+    border: 1px solid #222;
+    padding: 1% 0 1% 1%;
+}
+
+.map iframe {
+    padding: 0 1.5% 0 1.5%;
+    width: 100%;
+}
+
+/* -----------------Footer--------------------------- */
+.site-footer {
+    background-color: #222;
+    color: #c78c06;
+}
+
+.footer {
+    padding: 1.5% 0 2% 3%;
+}
+
+.footer p {
+    font-size: 13px;
+
+}
+
+.footer a {
+    color: #c78c06;
+}
+
+/* -------------------------------------------------------------------------
+                Desktop Styples
+--------------------------------------------------------------------- */
+@media screen and (min-width: 760px) {
+
+
+
+    /* ----------------Navigation Section------------ */
+    .nav-list {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .nav-list li {
+        flex: 1;
+
+    }
+
+    .searchinfo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .searchinfo {
+        width: 190px;
+
+    }
+
+    .button {
+        margin-left: 6px;
+        width: 35px;
+        height: 35px;
+    }
+
+    /* -------------------Banner---------------- */
+
+    .bannerinfo {
+        margin: 0 75px;
+        padding: 1% 1% 1% 1%;
+    }
+
+    /* -------------------about------------------------------------------------- */
+    .about {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-us {
+        width: 50%;
+        padding: 2% 1% 2% 75px;
+    }
+
+    .aboutinfo {
+        padding: 0 75px 2% 1%;
+        margin-top: -20px;
+    }
+
+    /* ---------------------services--------------------------- */
+
+    .services {
+
+        padding-left: 75px;
+        padding-right: 75px;
+        box-sizing: border-box;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(6, 0.5fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "head head head head head head"
+            "digital digital digital marketing marketing marketing"
+            "video video web web print print";
+        row-gap: 9px;
+        column-gap: 2px;
+    }
+
+    .services,
+    .dt,
+    .marketings,
+    .vp,
+    .wd,
+    .prints {
+        box-sizing: border-box;
+
+    }
+
+    .buttons {
+        width: 98%;
+        text-align: center;
+
+    }
+
+    .services h2 {
+        grid-area: head;
+    }
+
+    .dt {
+        grid-area: digital;
+    }
+
+    .marketings {
+        grid-area: marketing;
+    }
+
+    .vp {
+        grid-area: video;
+    }
+
+    .wd {
+        grid-area: web;
+    }
+
+    .prints {
+        grid-area: print;
+    }
+
+    /* ------------------------------------------Vision-------------------------------- */
+    .vision {
+
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .vision .buttons {
+        width: 250px;
+
+    }
+
+    /* --------------------------------------------team---------------------------------------------------------- */
+    #team h2 {
+        padding-left: 55px;
+    }
+
+    .teams {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 55px 0 55px;
+
+    }
+
+    .team1 {
+        flex-basis: 50%;
+        width: 100%;
+
+    }
+
+    .team2 {
+        flex-basis: 50%;
+        margin: 0px;
+    }
+
+    .team3 {
+        flex-basis: 50%;
+        order: 2;
+        width: 100%;
+    }
+
+    .team4 {
+        flex-basis: 50%;
+        margin: 0px;
+        order: 1;
+    }
+
+    /* ----------------Contact------------------- */
+
+    #contact h2 {
+        padding-left: 15px;
+        margin-top: -660px;
+    }
+
+    #contact {
+        padding: 5px 75px 0 55px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form {
+        padding-top: 95px;
+        flex-basis: 50%;
+        order: -2;
+        width: 90%;
+        height: 90%;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .tables {
+        width: 100%;
+        height: 20%;
+        order: 1;
+        padding-bottom: 20px;
+    }
+
+    .tables h3 {
+        padding-left: 20px;
+    }
+
+    .map {
+        padding-top: 25px;
+        height: 100%;
+        order: -1;
+        width: 100px;
+        flex-basis: 50%;
+    }
+
+    .map h3 {
+        padding-bottom: 15px;
+    }
